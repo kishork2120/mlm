@@ -1,0 +1,60 @@
+html,body{
+    height:100vh;
+}
+.body_background{
+    background-color: black;
+}
+.company_name{
+    color:#d4bc4e;
+}
+.copper_color{
+    background-image: url('../images/copper.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:white;
+}
+.zinc_color{
+    background-image: url('../images/zinc.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:black;
+}
+.earth_color{
+    background-image: url('../images/earth.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:white;
+}
+.gold_color{
+    background-image: url('../images/gold.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:black;
+}
+.platinum_color{
+    background-image: url('../images/platinum.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:black;
+}
+.pannel_custom_width{
+    width: 250px;
+    border-color: white;
+}
+.pannel_custom_width>div>p.panel-block{
+    color:white;
+}
+.body_background_image{
+    background-image: url('../images/background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.coming_text{
+    color:#21b0fe;
+}
