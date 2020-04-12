@@ -24,9 +24,10 @@ $(document).ready(()=>{
 
     // Loading states based on county id
     $('#countryList').change(()=>{
-        $("#stateList").html('');
-        $("#cityList").html('')
-        loadStateList($('#countryList').val());
+        loadStaticData()
+        // $("#stateList").html('');
+        // $("#cityList").html('')
+        // loadStateList($('#countryList').val());
     })
 
     // Load city list
@@ -55,7 +56,7 @@ $(document).ready(()=>{
     const loadStaticData = ()=>{
         const keyArray = ['copper','zinc','earth','gold','platinum'];
         let jsonData = {}
-        namePhoneGenerator.getNameSplitArray(5,5).forEach((d,i)=>{
+        namePhoneGenerator.getNameSplitArray(3,5).forEach((d,i)=>{
             jsonData[keyArray[i]] = d;
         })
         Object.keys(jsonData).forEach((d)=>{

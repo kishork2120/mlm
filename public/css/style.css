@@ -15,6 +15,7 @@ html,body{
 }
 p{
    font-family: 'RobotoRegular';
+   font-size: 13px;
 }
 .copper_color{
     background-image: url('../images/copper.png');
@@ -66,4 +67,7 @@ p{
 }
 .coming_text{
     color:#21b0fe;
+}
+td{
+    font-size:12px;
 }

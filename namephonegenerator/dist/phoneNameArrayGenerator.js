@@ -12,7 +12,8 @@ class PhoneNameArrayGenerator extends splitter_1.default {
     }
     getNameArray() {
         let splicedArray = super.split(names_1.default).slice(0, this.arrayLimit);
-        return splicedArray.map((d) => d.map((d1) => `${d1}-(${Math.ceil(Math.random() * Math.pow(10, 10))})`));
+        return splicedArray.map((d) => d.map((d1) => `${d1}-(${d1.toLowerCase()}${Math.ceil(Math.random() * Math.pow(10, 2))}@gmail.com)`));
+        //${Math.ceil(Math.random()*Math.pow(10,10))}
     }
 }
 exports.default = PhoneNameArrayGenerator;
