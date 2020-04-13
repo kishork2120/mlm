@@ -15,7 +15,7 @@ html,body{
 }
 p{
    font-family: 'RobotoRegular';
-   font-size: 13px;
+   font-size: 12.5px;
 }
 .copper_color{
     background-image: url('../images/copper.png');
@@ -70,4 +70,10 @@ p{
 }
 td{
     font-size:12px;
+}
+.prmimum_members_heading{
+    margin-top: 2vh;
+}
+.crown{
+    width:30px;
 }

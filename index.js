@@ -1,6 +1,7 @@
 const csc = require('country-state-city');
 const countries = csc.default.getAllCountries();
 const namePhoneGenerator = require('./namephonegenerator/dist');
+const { emailList } = require('./public/static/email.json');
 
 $(document).ready(()=>{
     // Loading countries initially
@@ -71,4 +72,26 @@ $(document).ready(()=>{
         })
     }
     loadStaticData();
+
+    // Load static email list
+    const loadEmailList = ()=>{
+        let jsonData = {};
+        namePhoneGenerator.getNameSplitArray(3,5,emailList).forEach((d,i)=>{
+            jsonData[`emailCustom${i+1}`] = d;
+        })
+        Object.keys(jsonData).forEach((d)=>{
+            $(`#${d}`).html('')
+            jsonData[d].forEach(d1=>{
+                $(`#${d}`).append(`
+                    <p class="panel-block">
+                        ${d1}
+                    </p>
+                    `)
+            })
+        })
+    }
+    loadEmailList();
+    setInterval(()=>{
+        loadEmailList();
+    },5000)
 });
