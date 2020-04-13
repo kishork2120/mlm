@@ -4,6 +4,9 @@ html,body{
 .body_background{
     background-color: black;
 }
+.logo{
+    width:300px;
+}
 .company_name{
     color:#ebd75a;
     /* font-family: 'BebasNeueRegular'; */
