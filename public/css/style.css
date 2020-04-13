@@ -6,12 +6,12 @@ html,body{
 }
 .company_name{
     color:#d4bc4e;
-    font-family: 'BebasNeueRegular';
-    letter-spacing: 16px;
+    /* font-family: 'BebasNeueRegular'; */
+    letter-spacing: 14px;
 }
 .coming_soon_text{
-    font-family: 'BebasNeueRegular';
-    letter-spacing: 16px;
+    color:#d4bc4e;
+    letter-spacing: 14px;
 }
 p{
    font-family: 'RobotoRegular';
@@ -76,4 +76,7 @@ td{
 }
 .crown{
     width:30px;
+}
+select{
+    font-weight: bold;
 }
