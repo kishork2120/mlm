@@ -5,8 +5,7 @@ require('dotenv').config();
 app.use(express.static('public'))
 
 app.get('/',(req,res)=>{
-    res.json({message:'ssss'})
-    // res.sendFile(`${__dirname}/index.html`);
+    res.sendFile(`${__dirname}/index.html`);
 })
 
 app.listen(process.env.PORT,(err)=>{
