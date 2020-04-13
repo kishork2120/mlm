@@ -1,3 +1,11 @@
+@font-face {
+    font-family: blackCaps;
+    src: url(../fonts/BLACKCAPS-Regular.ttf);
+}
+@font-face {
+    font-family: blackCapsDemo;
+    src: url(../fonts/IntroDemo-BlackCAPS.otf);
+}
 .body_background{
     background-color: black;
 }
@@ -6,16 +14,20 @@
 }
 .company_name{
     color:#ebd75a;
-    /* font-family: 'BebasNeueRegular'; */
+    font-family: 'blackCapsDemo';
     letter-spacing: 14px;
 }
 .coming_soon_text{
     color:#ebd75a;
+    font-family: 'blackCapsDemo';
     letter-spacing: 14px;
 }
 p{
    font-family: 'RobotoRegular';
    font-size: 12.5px;
+}
+.premium_member_fonts{
+    letter-spacing: 1px;
 }
 .copper_color{
     background-image: url('../images/copper.png');

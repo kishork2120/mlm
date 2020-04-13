@@ -5,9 +5,10 @@ const { emailList } = require('./public/static/email.json');
 
 $(document).ready(()=>{
     // Loading countries initially
-    countries.forEach((data)=>{
+    let countriesList = ['UNITED KINGDOM','INDONESIA','SINGAPORE','INDIA','NEPAL','MAURITIUS','SRI LANKA','BANGLADESH','SWEDEN']
+    countries.filter((d)=>countriesList.indexOf(d.name.toUpperCase())!=-1).forEach((data)=>{
         $("#countryList")
-        .append($(`<option ${data.id==101?'selected':''}></option>`)
+        .append($(`<option ${data.id==230?'selected':''}></option>`)
         .attr("value",data.id)
         .text(data.name));
     })
@@ -83,7 +84,7 @@ $(document).ready(()=>{
             $(`#${d}`).html('')
             jsonData[d].forEach(d1=>{
                 $(`#${d}`).append(`
-                    <p class="panel-block">
+                    <p class="panel-block premium_member_fonts">
                         ${d1}
                     </p>
                     `)
@@ -91,7 +92,7 @@ $(document).ready(()=>{
         })
     }
     loadEmailList();
-    setInterval(()=>{
-        loadEmailList();
-    },5000)
+    // setInterval(()=>{
+    //     loadEmailList();
+    // },5000)
 });
