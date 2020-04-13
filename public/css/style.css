@@ -5,12 +5,12 @@ html,body{
     background-color: black;
 }
 .company_name{
-    color:#d4bc4e;
+    color:#ebd75a;
     /* font-family: 'BebasNeueRegular'; */
     letter-spacing: 14px;
 }
 .coming_soon_text{
-    color:#d4bc4e;
+    color:#ebd75a;
     letter-spacing: 14px;
 }
 p{
