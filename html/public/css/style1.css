@@ -6,15 +6,15 @@ body{position:relative;font-family:'Roboto', sans-serif; background:url(../image
 .logo_sectioninner{background: url(../images/logo_bg.svg) no-repeat;width: 330px;height: 330px;line-height: 330px;display: inline-block;background-size: 100%;margin-top: 63px;position: relative;overflow: hidden;}
 .land_head img{height: 150px}
 .box_cat h3{color: #d5a94d;font-size: 22px; letter-spacing: 0px; padding-left:60px;position: relative;text-transform: uppercase;/* word-break: break-word; */white-space: nowrap;overflow: hidden;text-overflow: ellipsis;transition: letter-spacing 0.5s;}
-.box_cat h3:before{background: url(../images/crown.svg) no-repeat;width: 50px;height:50px;content: "";left:0;top: 0;position: absolute;transform: scale(0.8);z-index: 99;overflow: visible;}
-.box_cat:hover h3:before{transform: scale(1);}
 .box_cat h3:hover{letter-spacing: 1px;}
+.box_cat h3:before{background: url(../images/crown.svg) no-repeat;width: 50px;height:50px;content: "";left:0;top: 0;position: absolute;transform: scale(0.8);transition: transform 0.5s;}
+.box_cat h3:hover:before{transform: scale(1);}
 .box_cat p{font-size: 14px; color: #FFF;padding-left: 60px}
 #owl-carousel1{padding-top: 80px;}
 #owl-carousel1 .owl-nav{margin-top: 50px}
 #owl-carousel1 .owl-next{background:url(../images/rectangle1.svg) no-repeat;padding: 0 90px;line-height: 84px;color: #000;font-family: arial!important;width: 300px;height: 94px;position: relative;background-size: 100%;left: 50%;margin-left: -150px;outline: none;}
 #owl-carousel1 .owl-next:focus{outline: none;}
-#owl-carousel1 .owl-next:before{position: absolute;left: 0;top:0;width: 100%;content: "SHUFFLE";font-size: 30px;color: #000}
+#owl-carousel1 .owl-next:before{position: absolute;left: 0;top:0;width: 100%;content: "NEXT";font-size: 30px;color: #000}
 #owl-carousel1 .owl-next span{display: none;}
 #owl-carousel1 .owl-next.disabled{opacity: 0.5;cursor: default;}
 #owl-carousel2{padding-top: 40px;}
@@ -22,7 +22,7 @@ body{position:relative;font-family:'Roboto', sans-serif; background:url(../image
 #owl-carousel1 .owl-prev,#owl-carousel2 .owl-prev{display: none;}
 #owl-carousel2 .owl-next{background:url(../images/rectangle1.svg) no-repeat;padding: 0 90px;line-height: 84px;color: #000;font-family: arial!important;width: 300px;height: 94px;position: relative;background-size: 100%;left: 50%;margin-left: -150px;outline: none;}
 #owl-carousel2 .owl-next:focus{outline: none;}
-#owl-carousel2 .owl-next:before{position: absolute;left: 0;top:0;width: 100%;content: "SHUFFLE";font-size: 30px;color: #000}
+#owl-carousel2 .owl-next:before{position: absolute;left: 0;top:0;width: 100%;content: "NEXT";font-size: 30px;color: #000}
 #owl-carousel2 .owl-next span{display: none;}
 #owl-carousel2 .owl-next.disabled{opacity: 0.5;cursor: default;}
 #owl-carousel2 .box_cat h3{color: #fff;padding:0;font-size: 20px;}
@@ -49,7 +49,7 @@ body{position:relative;font-family:'Roboto', sans-serif; background:url(../image
 .container-fluid{padding-left: 0;padding-right: 0}
 }
 @media (max-width:480px){
-.box_cat h3{letter-spacing: 0;}
+.box_cat h3{letter-spacing: 0}
 #owl-carousel1 .owl-nav{margin-top: 20px}
 #owl-carousel1 .owl-next,#owl-carousel2 .owl-next{width: 250px;    margin-left: -125px;line-height: 75px}
 .other_section h4{font-size: 24px}
@@ -58,17 +58,12 @@ body{position:relative;font-family:'Roboto', sans-serif; background:url(../image
 .logo_section1,.logo_section2{width: 100%}
 .logo_section1 img{max-width: 90%}
 .logo_section2 img{max-width: 45%}
-.land_head img{max-width: 90%;}
+.land_head img{max-width: 100%}
 #owl-carousel2 .owl-nav{margin-top: 20px}
-#owl-carousel1{padding-top: 30px;}
-.logo_sectioninner1{width:250px;height:250px;background-size: 100%}
-.logo_sectioninner{width: 200px;height: 200px;line-height: 200px;margin-top: 20px}
-.logo_section img{width: 100px;height: 100px}
-.logo_section2 img{max-width: 80%;margin-right: 0;}
-.logo_section2 img + img{max-width: 50%;margin-top: 10px;display: inline-block;}
+#owl-carousel1{padding-top: 50px;}
 }
 @media (max-width:330px){
-	.land_head img{height: 120px}
+.logo_sectioninner{width: 300px;height: 300px;line-height: 300px;}
 }
 /*Responsive End*/
 
