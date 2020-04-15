@@ -1,0 +1,69 @@
+body*{font-family:'Roboto', sans-serif;}
+body{position:relative;font-family:'Roboto', sans-serif; background:url(../images/top_bg2.png) no-repeat; background-color: #000;background-size: 100%;}
+.logo_section{text-align: center;}
+.logo_sectioninner1{text-align: center;background: url(../images/logo_bg2.png) no-repeat;width: 450px;height: 450px;display: inline-block;margin-top: -5px;position: relative;z-index: 999;overflow: hidden;/* content: ""; */}
+.logo_section img{width: 150px;height: 150px;}
+.logo_sectioninner{background: url(../images/logo_bg.svg) no-repeat;width: 330px;height: 330px;line-height: 330px;display: inline-block;background-size: 100%;margin-top: 63px;position: relative;overflow: hidden;}
+.land_head img{height: 150px}
+.box_cat h3{color: #d5a94d;font-size: 22px;/* letter-spacing: 3px; */padding-left:60px;position: relative;text-transform: uppercase;/* word-break: break-word; */white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+.box_cat h3:before{background: url(../images/crown.svg) no-repeat;width: 50px;height:50px;content: "";left:0;top: 0;position: absolute;transform: scale(0.8);transition: transform 0.5s;}
+.box_cat h3:hover:before{transform: scale(1);}
+.box_cat p{font-size: 14px; color: #FFF;padding-left: 60px}
+#owl-carousel1{padding-top: 80px;}
+#owl-carousel1 .owl-nav{margin-top: 50px}
+#owl-carousel1 .owl-next{background:url(../images/rectangle1.svg) no-repeat;padding: 0 90px;line-height: 84px;color: #000;font-family: arial!important;width: 300px;height: 94px;position: relative;background-size: 100%;left: 50%;margin-left: -150px;outline: none;}
+#owl-carousel1 .owl-next:focus{outline: none;}
+#owl-carousel1 .owl-next:before{position: absolute;left: 0;top:0;width: 100%;content: "SHUFFLE";font-size: 30px;color: #000}
+#owl-carousel1 .owl-next span{display: none;}
+#owl-carousel1 .owl-next.disabled{opacity: 0.5;cursor: default;}
+#owl-carousel2{padding-top: 40px;}
+#owl-carousel2 .owl-nav{margin-top: 50px}
+#owl-carousel1 .owl-prev,#owl-carousel2 .owl-prev{display: none;}
+#owl-carousel2 .owl-next{background:url(../images/rectangle1.svg) no-repeat;padding: 0 90px;line-height: 84px;color: #000;font-family: arial!important;width: 300px;height: 94px;position: relative;background-size: 100%;left: 50%;margin-left: -150px;outline: none;}
+#owl-carousel2 .owl-next:focus{outline: none;}
+#owl-carousel2 .owl-next:before{position: absolute;left: 0;top:0;width: 100%;content: "NEXT";font-size: 30px;color: #000}
+#owl-carousel2 .owl-next span{display: none;}
+#owl-carousel2 .owl-next.disabled{opacity: 0.5;cursor: default;}
+#owl-carousel2 .box_cat h3{color: #fff;padding:0;font-size: 20px;}
+#owl-carousel2 .box_cat h3:before{display: none;}
+#owl-carousel2 .box_cat p{padding: 0}
+.other_section {padding-top: 60px;}
+.other_section h4{ font-size: 30px; color: #FFF; font-weight: normal;letter-spacing: 3px;margin-top: 10px}
+.country_sel .btn{background:#222939;border-color:#222939;border-radius: 50px;padding:10px 30px;}
+#owl-carousel1 .owl-dots{display: none;}
+.carousel_outer{width: 100%}
+.logo_section1{text-align: center;margin-bottom: 15px;margin-top: -10px;}
+.logo_section2{margin-top: 0}
+.land_head {margin-top: 20px;}
+.logo_section2 img{margin-right: 10px;}
+.country_sel .dropdown-menu{background: #222;}
+.country_sel .dropdown-menu a{color: #FFF;}
+.country_sel .dropdown-menu a:hover{color:#d5a94d}
+/*Responsive*/
+@media (min-width:1200px){
+.container, .container-lg, .container-md, .container-sm, .container-xl{max-width: 1270px;width:100%;}
+}
+@media (max-width:992px){
+.container{max-width:100%}
+.container-fluid{padding-left: 0;padding-right: 0}
+}
+@media (max-width:480px){
+.box_cat h3{letter-spacing: 0}
+#owl-carousel1 .owl-nav{margin-top: 20px}
+#owl-carousel1 .owl-next,#owl-carousel2 .owl-next{width: 250px;    margin-left: -125px;line-height: 75px}
+.other_section h4{font-size: 24px}
+.other_section{padding-top: 20px}
+.country_sel{margin-top: 10px;float: none!important;display: inline-block;}
+.logo_section1,.logo_section2{width: 100%}
+.logo_section1 img{max-width: 90%}
+.logo_section2 img{max-width: 45%}
+.land_head img{max-width: 100%}
+#owl-carousel2 .owl-nav{margin-top: 20px}
+#owl-carousel1{padding-top: 50px;}
+}
+@media (max-width:330px){
+.logo_sectioninner{width: 300px;height: 300px;line-height: 300px;}
+}
+/*Responsive End*/
+
+
